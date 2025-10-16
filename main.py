@@ -26,7 +26,7 @@ def main():
     AsteroidField()
 
     while(True):
-        for event in pygame.event.get():
+        for  event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
 
@@ -36,6 +36,10 @@ def main():
             if asteroid.is_colliding(player):
                 print("Game Over!")
                 sys.exit(1)
+            for shot in shot_group:
+                if shot.is_colliding(asteroid):
+                    shot.kill()
+                    asteroid.split()
 
         screen.fill("black")
         for drawable_item in drawable_group:
