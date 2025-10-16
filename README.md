@@ -1,4 +1,4 @@
-# Asteroid Game
+# 🚀 Asteroid Game
 
 A classic arcade-style asteroid shooter game built with Python and Pygame as part of my learning journey with [Boot.dev](https://boot.dev/) courses. This project represents one of my first experiences with Python game development, game loops, and modern Python package management with `uv`.
 
@@ -11,7 +11,7 @@ This project was created while following the Boot.dev curriculum and served as a
 - **Object-Oriented Programming**: Implementing game entities as classes
 - **Physics Simulation**: Basic collision detection and movement systems
 
-## Features
+## ✨ Features
 
 - **Smooth Player Movement**: Navigate your triangular spaceship with responsive controls
 - **Dynamic Asteroid Field**: Asteroids spawn continuously from screen edges with varying sizes
@@ -20,13 +20,13 @@ This project was created while following the Boot.dev curriculum and served as a
 - **Shooting Mechanics**: Fire shots with cooldown system to prevent spam
 - **60 FPS Gameplay**: Smooth, consistent frame rate for optimal gaming experience
 
-## Controls
+## 🎮 Controls
 
 - **Q/D**: Rotate left/right
 - **Z/S**: Move forward/backward
 - **SPACEBAR**: Shoot (with 0.3s cooldown)
 
-## Technical Details
+## 🛠️ Technical Details
 
 ### Game Components
 
@@ -42,7 +42,7 @@ This project was created while following the Boot.dev curriculum and served as a
 - **Physics**: Velocity-based movement with delta time for frame-independent motion
 - **Game Over**: Collision with asteroids ends the game
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -82,7 +82,7 @@ This project was created while following the Boot.dev curriculum and served as a
    python main.py
    ```
 
-## Project Structure
+## 🏗️ Project Structure
 
 ```
 asteroid-game/
@@ -98,7 +98,7 @@ asteroid-game/
 └── README.md        # This file
 ```
 
-## Configuration
+## ⚙️ Configuration
 
 Game settings can be modified in `constants.py`:
 
@@ -109,7 +109,7 @@ Game settings can be modified in `constants.py`:
 - **Shot Cooldown**: 0.3 seconds
 - **Asteroid Sizes**: 3 different size categories
 
-## Game Objective
+## 🎯 Game Objective
 
 Survive as long as possible by:
 1. Avoiding collisions with asteroids
@@ -135,7 +135,7 @@ Feel free to fork this project and submit pull requests for improvements such as
 - Multiple lives
 - Increasing difficulty levels
 
-## License
+## 📝 License
 
 This project is open source and available under the [LICENSE](LICENSE) file.
 
