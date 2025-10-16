@@ -13,7 +13,9 @@ This project was created while following the Boot.dev curriculum and served as a
 
 ## ✨ Features
 
-- **Smooth Player Movement**: Navigate your triangular spaceship with responsive controls
+- **Smooth Player Movement**: Navigate your triangular spaceship with responsive controls (WASD or Arrow keys)
+- **Score System**: Track your performance by destroying asteroids
+- **Lives & Respawn**: Start with multiple lives and respawn after collisions
 - **Dynamic Asteroid Field**: Asteroids spawn continuously from screen edges with varying sizes
 - **Asteroid Splitting**: Large asteroids break into smaller pieces when shot
 - **Collision Detection**: Advanced circular collision system between player, asteroids, and shots
@@ -22,8 +24,8 @@ This project was created while following the Boot.dev curriculum and served as a
 
 ## 🎮 Controls
 
-- **Q/D**: Rotate left/right
-- **Z/S**: Move forward/backward
+- **Q/D or LEFT/RIGHT ARROW**: Rotate left/right
+- **Z/S or UP/DOWN ARROW**: Move forward/backward
 - **SPACEBAR**: Shoot (with 0.3s cooldown)
 
 ## 🛠️ Technical Details
@@ -37,10 +39,12 @@ This project was created while following the Boot.dev curriculum and served as a
 
 ### Key Game Mechanics
 
+- **Score Tracking**: Earn points by destroying asteroids (points vary by asteroid size)
+- **Lives System**: Start with 3 lives; respawn when hit by asteroids
 - **Asteroid Spawning**: New asteroids appear every 0.8 seconds from random screen edges
 - **Collision System**: Circle-based collision detection for all game objects
 - **Physics**: Velocity-based movement with delta time for frame-independent motion
-- **Game Over**: Collision with asteroids ends the game
+- **Game Over**: Game ends when all lives are depleted
 
 ## 🚀 Getting Started
 
@@ -111,10 +115,11 @@ Game settings can be modified in `constants.py`:
 
 ## 🎯 Game Objective
 
-Survive as long as possible by:
-1. Avoiding collisions with asteroids
-2. Shooting asteroids to break them into smaller pieces
-3. Clearing smaller asteroids completely to reduce screen clutter
+Achieve the highest score possible by:
+1. Shooting asteroids to earn points
+2. Managing your 3 lives wisely
+3. Breaking larger asteroids into smaller pieces for more points
+4. Surviving as long as possible against increasingly crowded asteroid fields
 
 ## What I Learned
 
@@ -129,11 +134,11 @@ Through this Boot.dev project, I gained experience with:
 ## Contributing
 
 Feel free to fork this project and submit pull requests for improvements such as:
-- Score system
-- Power-ups
-- Sound effects
-- Multiple lives
+- Power-ups and bonuses
+- Sound effects and background music
+- High score persistence
 - Increasing difficulty levels
+- Special weapons or abilities
 
 ## 📝 License
 
