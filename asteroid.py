@@ -20,12 +20,14 @@ class Asteroid(CircleShape):
     def update(self, dt):
         self.position += self.velocity * dt
 
-    def split(self):
+    def split(self, player):
         self.kill()
 
         if self.radius <= ASTEROID_MIN_RADIUS:
+            player.score += 100
             return
 
+        player.score += 50
         random_angle_number = random.uniform(20, 50)
 
         random_angle = self.velocity.rotate(random_angle_number)
