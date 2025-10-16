@@ -1,7 +1,7 @@
 import pygame
 from pygame.math import Vector2
 from circleshape import CircleShape
-from constants import PLAYER_RADIUS, PLAYER_SHOOT_COOLDOWN, PLAYER_SHOOT_SPEED, PLAYER_SPEED, PLAYER_TURN_SPEED
+from constants import PLAYER_RADIUS, PLAYER_SHOOT_COOLDOWN, PLAYER_SHOOT_SPEED, PLAYER_SPEED, PLAYER_TURN_SPEED, SCREEN_HEIGHT, SCREEN_WIDTH
 from shot import Shot
 
 class Player(CircleShape):
@@ -10,6 +10,7 @@ class Player(CircleShape):
         self.rotation = 180
         self.cooldown = 0
         self.score = 0
+        self.lives_count = 3
 
     def draw(self, screen):
         pygame.draw.polygon(screen, "white", self.triangle(), 2) #type: ignore
@@ -52,4 +53,7 @@ class Player(CircleShape):
     def shoot(self):
         shot = Shot(self.position[0], self.position[1])
         shot.velocity = Vector2(0, 1).rotate(self.rotation) * PLAYER_SHOOT_SPEED
+
+    def respawn(self):
+        self.position = Vector2(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
 
